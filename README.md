@@ -34,8 +34,5 @@ verilog-logic-gates/
 | XOR  | `^`    | `Y = A ^ B` |
 | XNOR | `~^`   | `Y = ~(A ^ B)` |
 
-##  How to Simulate
-```bash
-iverilog -o gates_sim src/*.v testbench/gates_tb.v
-vvp gates_sim
-```
+
+
