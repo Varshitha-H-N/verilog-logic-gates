@@ -129,6 +129,7 @@ irun -f xor_gate_compile.f
 irun -f xnor_gate_compile.f
 ```
 
+
 ### compile.f format
 ```
 -timescale 1ns/1ps
@@ -140,19 +141,57 @@ testbench/<gate_name>_tb.v
 
 ---
 
-## 📊 Expected Output (AND Gate)
-
+## 📊 Expected Output 
+## (AND Gate)
 ```
 A=0, B=0, Y=0
 A=0, B=1, Y=0
 A=1, B=0, Y=0
 A=1, B=1, Y=1
 ```
-
+## (OR Gate)
+```
+A=0, B=0, Y=0
+A=0, B=1, Y=1
+A=1, B=0, Y=1
+A=1, B=1, Y=1
+```
+## (NOT Gate)
+```
+A=0, Y=1
+A=1, Y=0
+```
+## (NAND Gate)
+```
+A=0, B=0, Y=1
+A=0, B=1, Y=1
+A=1, B=0, Y=1
+A=1, B=1, Y=0
+```
+## (NOR Gate)
+```
+A=0, B=0, Y=1
+A=0, B=1, Y=0
+A=1, B=0, Y=0
+A=1, B=1, Y=0
+```
+## (XOR Gate)
+```
+A=0, B=0, Y=0
+A=0, B=1, Y=1
+A=1, B=0, Y=1
+A=1, B=1, Y=0
+```
+## (XNOR Gate)
+```
+A=0, B=0, Y=1
+A=0, B=1, Y=0
+A=1, B=0, Y=0
+A=1, B=1, Y=1
+```
 ---
 
 ## 🛠️ Tools Used
-''' Candence'''
 
 - **Language:** Verilog HDL
 - **Simulator:** Cadence Incisive (irun)
